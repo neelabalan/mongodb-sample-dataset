@@ -26,7 +26,7 @@ MongoDB does not provide any sample databases on their website, However, they do
 ```bash
 docker pull mvertes/alpine-mongo
 
-docker run -d --name mongo -p 2717:27017 -v ~/mongodb:data/db  mvertes/alpine-mongo
+docker run -d --name mongo -p 2717:27017 -v ~/mongodb:/data/db  mvertes/alpine-mongo
 
 # args
 #   hostname   
