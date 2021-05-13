@@ -2,7 +2,7 @@
 
 > this is a duplicate [repo](https://github.com/mcampo2/mongodb-sample-databases).
 
-> the original repo had BSON dump. I removed it and I added a script.sh to import the JSON docs to respective db 
+> the original repo has BSON dump. I've removed it and I added a bash [script](https://github.com/neelabalan/mongodb-sample-dataset/blob/main/script.sh) to import the JSON to respective db 
 
 Atlas provides sample data you can load into your Atlas clusters. You can use this data to quickly get started experimenting with data in MongoDB and using tools such as the Atlas Perform CRUD Operations in Atlas and MongoDB Charts.
 
