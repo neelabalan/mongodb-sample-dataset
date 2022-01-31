@@ -1,4 +1,9 @@
 #!/bin/bash
+###########################################################
+# Ussage ( * = optional ):                                #
+# ./script <db-address> <db-port> *<username> *<password> #
+###########################################################
+
 if [ ! -z "$3" ]; then
     if [ ! -z "$4" ]; then
         echo "Using password authentication!"
