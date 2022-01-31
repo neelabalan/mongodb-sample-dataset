@@ -2,11 +2,11 @@
 if [ ! -z "$3" ]; then
     if [ ! -z "$4" ]; then
         echo "Using password authentication!"
-        #auth="--authenticationDatabase admin -u $3 -p $4"
+        auth="--authenticationDatabase admin -u $3 -p $4"
     fi
 fi
 
-echo $auth
+#echo $auth
 
 for coll in *; do
     if [ -d "${coll}" ] ; then
