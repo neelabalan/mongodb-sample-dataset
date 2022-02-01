@@ -1,6 +1,8 @@
 # [MongoDB Sample Dataset](https://docs.atlas.mongodb.com/sample-data/available-sample-datasets/)
 
-> this is a duplicate [repo](https://github.com/mcampo2/mongodb-sample-databases).
+For `mongoimport` the MongoDB database tools need to installed. You can find it [here](https://www.mongodb.com/try/download/database-tools?tck=docs_databasetools)
+
+> this is a fork of [repo](https://github.com/mcampo2/mongodb-sample-databases).
 
 > the original repo has BSON dump. I've removed it and I added a bash [script](https://github.com/neelabalan/mongodb-sample-dataset/blob/main/script.sh) to import the JSON to respective db 
 
