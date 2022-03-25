@@ -1,8 +1,8 @@
 #!/bin/bash
-###########################################################
-# Ussage ( * = optional ):                                #
-# ./script <db-address> <db-port> *<username> *<password> #
-###########################################################
+##############################################################
+# Usage ( * = optional ):                                    #
+# ./script.sh <db-address> <db-port> *<username> *<password> #
+##############################################################
 
 if [ ! -z "$3" ]; then
     if [ ! -z "$4" ]; then
@@ -10,8 +10,6 @@ if [ ! -z "$3" ]; then
         auth="--authenticationDatabase admin -u $3 -p $4"
     fi
 fi
-
-#echo $auth
 
 for coll in *; do
     if [ -d "${coll}" ] ; then
