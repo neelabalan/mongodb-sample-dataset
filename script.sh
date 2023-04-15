@@ -1,7 +1,8 @@
 #!/bin/bash
+# vim:sw=4:ts=4:et:ai:ci:sr:nu:syntax=sh
 ##############################################################
 # Usage ( * = optional ):                                    #
-# ./script.sh <db-address> <db-port> *<username> *<password> #
+# ./script.sh *<db-address> *<db-port> *<username> *<password> #
 ##############################################################
 
 if [ ! -z "$3" ]; then
@@ -11,13 +12,14 @@ if [ ! -z "$3" ]; then
     fi
 fi
 
-for coll in *; do
-    if [ -d "${coll}" ] ; then
-        echo "$coll"
-        for file in $coll/*; do
-            mongoimport --drop --host $1 --port $2 --db "$coll" --collection "$(basename $file .json)" --file $file $auth
-            #echo "$(basename $file .json)"
-            #echo "$file"
+HOST=${1:-localhost} # default server is the localhost
+PORT=${2:-27017}     # default port for MongoDB is 27017
+
+for directory in *; do
+    if [ -d "${directory}" ] ; then
+        echo "$directory"
+        for data_file in $directory/*; do
+            mongoimport --drop --host $HOST --port $PORT --db "$directory" --collection "$(basename $data_file .json)" --file $data_file $auth
         done
     fi
 done
