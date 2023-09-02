@@ -61,16 +61,16 @@ while true; do
         3)
             # List of collection names and corresponding JSON files
             collections=(
-                templates.StorageMPFile
-                templates.StorageMPFile.automationcode
-                automationmap
+                comments
+                movies                
+                sessions
             )
             json_files=(
-                templates
-                templates.automationcode
-                casemap
+                comments
+                movies                
+                sessions
             )
-            dir="/home/$LOGNAME/go/src/nimble.com/fileStorageRavePlugins/testPlugins/inputs"
+            dir="/workspaces/mongodb-sample-dataset/sample_mflix"
             import_collection "${collections[@]}"
             break
             ;;
