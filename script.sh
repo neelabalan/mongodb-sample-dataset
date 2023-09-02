@@ -22,9 +22,9 @@ function import_collection {
 
 
 echo "Hey Hi $LOGNAME, do you want to import a MongoDB collection?"
-echo "ravemongodata: Enter 1"
-echo "arcusmongodata: Enter 2"
-echo "reszomongodata: Enter 3"
+echo "sample_analyticsmongodata: Enter 1"
+echo "sample_geospatialmongodata: Enter 2"
+echo "sample_mflixmongodata: Enter 3"
 echo "exit: Enter 4"
 while true; do
     read -rp "Enter your choice: " action
