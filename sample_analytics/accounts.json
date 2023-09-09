@@ -1744,3 +1744,4 @@
 {"_id":{"$oid":"5ca4bbc7a2dd94ee58162a5e"},"account_id":{"$numberInt":"684319"},"limit":{"$numberInt":"10000"},"products":["InvestmentFund","InvestmentStock"]}
 {"_id":{"$oid":"5ca4bbc7a2dd94ee58162a5f"},"account_id":{"$numberInt":"351063"},"limit":{"$numberInt":"10000"},"products":["InvestmentStock"]}
 {"_id":{"$oid":"5ca4bbc7a2dd94ee58162a60"},"account_id":{"$numberInt":"291224"},"limit":{"$numberInt":"10000"},"products":["Commodity","InvestmentStock"]}
+{"_id":{"$oid":"5ca4bbc7a2dd94ee58162a60"},"account_id":{"$numberInt":"291224"},"limit":{"$numberInt":"10000"},"products":["Commodity","InvestmentStock"]}
