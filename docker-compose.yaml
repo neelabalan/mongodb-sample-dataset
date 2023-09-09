@@ -1,3 +1,21 @@
+# version: '3.8'
+
+# services:
+#   mongodb:
+#     image: mongo:latest
+#     container_name: mongodb
+#     restart: always
+#     environment:
+#       env_file: ./env
+#     ports:
+#       - "27017:27017"
+#     net:
+#       bindIp: 0.0.0.0
+#     volumes:
+#       - mongodb_data:/data/db
+
+# volumes:
+#   mongodb_data:
 version: '3.8'
 
 services:
@@ -5,12 +23,41 @@ services:
     image: mongo:latest
     container_name: mongodb
     restart: always
-    environment:
-      env_file: ./env
     ports:
       - "27017:27017"
+    networks:
+      - mongodbnet
     volumes:
       - mongodb_data:/data/db
 
+networks:
+  mongodbnet:
+
 volumes:
   mongodb_data:
+
+
+
+
+# version: '3.8'
+
+# services:
+#   mongodb:
+#     image: mvertes/alpine-mongo:latest
+#     container_name: mongodb
+#     restart: always
+#     environment:
+#       env_file: ./env
+#     ports:
+#       - "27017:27017"
+#     volumes:
+#       - mongodb_data:/data/db
+#     healthcheck:
+#       test: ["CMD", "mongosg", "--eval", "db.runCommand({ping:1})"]
+#       interval: 10s
+#       timeout: 5s
+#       retries: 3
+
+# volumes:
+#   mongodb_data:
+

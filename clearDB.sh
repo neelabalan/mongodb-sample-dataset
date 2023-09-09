@@ -1,0 +1,1 @@
+docker exec -it mongodb mongosh "db.accounts.deleteMany({})"

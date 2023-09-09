@@ -1,0 +1,2 @@
+2023-09-09T04:47:49.393+0000	error parsing command line options: error parsing positional arguments: cannot use both --file and a positional argument to set the input file
+2023-09-09T04:47:49.393+0000	try 'mongoimport --help' for more information
